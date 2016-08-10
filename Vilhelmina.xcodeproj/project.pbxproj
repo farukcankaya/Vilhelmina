@@ -15,6 +15,8 @@
 		B32D6F0C1D5ADB9D00458D92 /* BootstrapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F081D5ADB9D00458D92 /* BootstrapInteractor.swift */; };
 		B32D6F0D1D5ADB9D00458D92 /* BootstrapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F091D5ADB9D00458D92 /* BootstrapPresenter.swift */; };
 		B32D6F0E1D5ADB9D00458D92 /* BootstrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F0A1D5ADB9D00458D92 /* BootstrapView.swift */; };
+		B32D6F121D5ADCBF00458D92 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F111D5ADCBF00458D92 /* Routable.swift */; };
+		B32D6F141D5ADCDE00458D92 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F131D5ADCDE00458D92 /* RootWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B32D6F081D5ADB9D00458D92 /* BootstrapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BootstrapInteractor.swift; path = Modules/Bootstrap/BootstrapInteractor.swift; sourceTree = "<group>"; };
 		B32D6F091D5ADB9D00458D92 /* BootstrapPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BootstrapPresenter.swift; path = Modules/Bootstrap/BootstrapPresenter.swift; sourceTree = "<group>"; };
 		B32D6F0A1D5ADB9D00458D92 /* BootstrapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BootstrapView.swift; path = Modules/Bootstrap/BootstrapView.swift; sourceTree = "<group>"; };
+		B32D6F111D5ADCBF00458D92 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routable.swift; path = Common/Protocols/Routable.swift; sourceTree = "<group>"; };
+		B32D6F131D5ADCDE00458D92 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Common/RootWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,9 @@
 			children = (
 				B32D6EEE1D5AD89700458D92 /* AppDelegate.swift */,
 				B32D6F041D5ADB1800458D92 /* Assets */,
+				B32D6F151D5ADE0B00458D92 /* Networking */,
+				B32D6F0F1D5ADC9C00458D92 /* Protocols */,
+				B32D6F131D5ADCDE00458D92 /* RootWireframe.swift */,
 				B32D6F031D5ADAFD00458D92 /* Storyboards */,
 			);
 			name = Common;
@@ -127,6 +134,21 @@
 				B32D6F0A1D5ADB9D00458D92 /* BootstrapView.swift */,
 			);
 			name = Bootstrap;
+			sourceTree = "<group>";
+		};
+		B32D6F0F1D5ADC9C00458D92 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F111D5ADCBF00458D92 /* Routable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B32D6F151D5ADE0B00458D92 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32D6F0B1D5ADB9D00458D92 /* BootstrapDataManager.swift in Sources */,
+				B32D6F121D5ADCBF00458D92 /* Routable.swift in Sources */,
+				B32D6F141D5ADCDE00458D92 /* RootWireframe.swift in Sources */,
 				B32D6F0D1D5ADB9D00458D92 /* BootstrapPresenter.swift in Sources */,
 				B32D6F0C1D5ADB9D00458D92 /* BootstrapInteractor.swift in Sources */,
 				B32D6EEF1D5AD89700458D92 /* AppDelegate.swift in Sources */,
