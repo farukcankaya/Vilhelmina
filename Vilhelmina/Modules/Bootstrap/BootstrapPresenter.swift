@@ -9,8 +9,8 @@
 import Foundation
 
 protocol BootstrapPresenterProtocol{
-    weak var interactor: BootstrapInteractor? { get set }
-    var view: BootstrapView? { get set }
+    var interactor: BootstrapInteractor? { get set }
+    weak var view: BootstrapView? { get set }
     
     func updateView()
 }
@@ -18,8 +18,8 @@ protocol BootstrapPresenterProtocol{
 class BootstrapPresenter: Routable, BootstrapPresenterProtocol{
     var router: RootWireframe?
     
-    weak var interactor: BootstrapInteractor?
-    var view: BootstrapView?
+    var interactor: BootstrapInteractor?
+    weak var view: BootstrapView?
     
     init(withView view:BootstrapView, interactor:BootstrapInteractor, router:RootWireframe){
         self.router = router
@@ -32,5 +32,49 @@ class BootstrapPresenter: Routable, BootstrapPresenterProtocol{
         interactor?.initiateDataExchangeSequence()
     }
     
-    //MARK: IntroInteractorOutputProtocol Methods
+    func errorMessage(with context:String, error:NSError) -> String{
+        let errorMessage = NSString(format: "An error occured during %@. (%@)", context, error.localizedDescription)
+        return errorMessage as String
+    }
+}
+
+extension BootstrapPresenter: BootstrapInteractorOutputProtocol{
+    
+    func didReceiveLoginResponse(withSuccess:Bool, error:NSError?){
+        if let error = error {
+            view?.show(message: self.errorMessage(with: "token retrival", error: error))
+        }else{
+            view?.show(message: "Received token. Retrieving project list")
+        }
+    }
+    
+    func didReceiveProjectsResponse(withSuccess:Bool, error:NSError?){
+        if let error = error {
+            view?.show(message: self.errorMessage(with: "projects retrival", error: error))
+        }else{
+            view?.show(message: "Retrieved projects.")
+        }
+    }
+    
+    func didSwitchedTo(project project:ProjectItem){
+        let message = "Retrieving the taskforms of the project:".stringByAppendingFormat(" %@", project.name)
+        view?.show(message: message)
+    }
+    
+    func didFoundZeroProjectsWithSubmissions(){
+        view?.show(message: "Couldn't find any project with submissions.")
+    }
+    
+    func didFoundZeroProjects(){
+        view?.show(message: "Couldn't find any projects at all.")
+    }
+    
+    func didReceiveProjectTaskformsResponse(withSuccess:Bool, items:[ProjectTaskformItem]?, error:NSError?){
+        if withSuccess{
+            view?.show(message: "Project taskforms are received. Switching to submissions module now.")
+            self.router?.showSubmissionsModule()
+        }else if let error = error{
+            view?.show(message: self.errorMessage(with: "project taskforms retrival", error: error))
+        }
+    }
 }

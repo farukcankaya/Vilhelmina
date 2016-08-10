@@ -9,13 +9,13 @@
 import UIKit
 
 protocol BootstrapViewProtocol{
-    weak var presenter: BootstrapPresenter? { get set }
+    var presenter: BootstrapPresenter? { get set }
     
     func show(message message:String)
 }
 
 class BootstrapView: UIViewController, BootstrapViewProtocol{
-    weak var presenter: BootstrapPresenter?
+    var presenter: BootstrapPresenter?
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var currentActivityInfoLabel: UILabel!
@@ -26,7 +26,9 @@ class BootstrapView: UIViewController, BootstrapViewProtocol{
     }
     
     func show(message message: String) {
-        currentActivityInfoLabel.text = message
+        dispatch_async(dispatch_get_main_queue()) { 
+            self.currentActivityInfoLabel.text = message
+        }
     }
 }
 

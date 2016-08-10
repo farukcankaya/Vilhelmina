@@ -8,10 +8,64 @@
 
 import Foundation
 
-protocol BootstrapDataManagerProtocol{
+protocol BootstrapDataManagerInputProtocol{
     var interactor: BootstrapInteractor? { get set }
+    
+    func login()
 }
 
-class BootstrapDataManager: BootstrapDataManagerProtocol{
+protocol BootstrapDataManagerOutputProtocol{
+    func didReceiveLoginResponse(withSuccess:Bool, error:NSError?)
+    func didReceiveProjectsResponse(withSuccess:Bool, items:[ProjectItem]?, error:NSError?)
+    func didReceiveProjectTaskformsResponse(withSuccess:Bool, taskforms:[ProjectTaskformItem]?, error:NSError?)
+}
+
+class BootstrapDataManager: BootstrapDataManagerInputProtocol{
     var interactor: BootstrapInteractor?
+    
+    func login(){
+        let signingInOperation = SignInOperation(email: "email", password: "password")
+        
+        signingInOperation.success = { item in
+            self.interactor?.didReceiveLoginResponse(true, error: nil)
+        }
+        
+        signingInOperation.failure = { error in
+            self.interactor?.didReceiveLoginResponse(false, error: error)
+        }
+        
+        NetworkQueue.shared.addOperation(signingInOperation)
+    }
+    
+    func getProjects(){
+        let projectsRetrivalOperation = ProjectsRetrivalOperation()
+        
+        projectsRetrivalOperation.success = { items in
+            print(items)
+            self.interactor?.didReceiveProjectsResponse(true, items: items, error: nil)
+        }
+        
+        projectsRetrivalOperation.failure = { error in
+            print(error.localizedDescription)
+            self.interactor?.didReceiveProjectsResponse(false, items: nil, error: error)
+        }
+        
+        NetworkQueue.shared.addOperation(projectsRetrivalOperation)
+    }
+    
+    func getTaskforms(of project: ProjectItem){
+        let projectTaskformsOperation = ProjectTaskformsOperation(projectId: project.id)
+        
+        projectTaskformsOperation.success = { taskforms in
+            print(taskforms)
+            self.interactor?.didReceiveProjectTaskformsResponse(true, taskforms: taskforms, error: nil)
+        }
+        
+        projectTaskformsOperation.failure = { error in
+            print(error.localizedDescription)
+            self.interactor?.didReceiveProjectTaskformsResponse(false, taskforms: nil, error: error)
+        }
+        
+        NetworkQueue.shared.addOperation(projectTaskformsOperation)
+    }
 }
