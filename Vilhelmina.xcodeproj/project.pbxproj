@@ -17,6 +17,31 @@
 		B32D6F0E1D5ADB9D00458D92 /* BootstrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F0A1D5ADB9D00458D92 /* BootstrapView.swift */; };
 		B32D6F121D5ADCBF00458D92 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F111D5ADCBF00458D92 /* Routable.swift */; };
 		B32D6F141D5ADCDE00458D92 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F131D5ADCDE00458D92 /* RootWireframe.swift */; };
+		B32D6F421D5AE1E800458D92 /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F281D5AE1E800458D92 /* BackendAPIRequest.swift */; };
+		B32D6F431D5AE1E800458D92 /* BackendConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F291D5AE1E800458D92 /* BackendConfiguration.swift */; };
+		B32D6F441D5AE1E800458D92 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F2A1D5AE1E800458D92 /* BackendService.swift */; };
+		B32D6F451D5AE1E800458D92 /* ServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F2B1D5AE1E800458D92 /* ServiceOperation.swift */; };
+		B32D6F461D5AE1E800458D92 /* ArrayResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F2D1D5AE1E800458D92 /* ArrayResponseMapper.swift */; };
+		B32D6F481D5AE1E800458D92 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F301D5AE1E800458D92 /* NetworkOperation.swift */; };
+		B32D6F491D5AE1E800458D92 /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F311D5AE1E800458D92 /* NetworkQueue.swift */; };
+		B32D6F4A1D5AE1E800458D92 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F321D5AE1E800458D92 /* NetworkService.swift */; };
+		B32D6F4B1D5AE1E800458D92 /* NSError+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F341D5AE1E800458D92 /* NSError+Failure.swift */; };
+		B32D6F4C1D5AE1E800458D92 /* ParsedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F361D5AE1E800458D92 /* ParsedItem.swift */; };
+		B32D6F4D1D5AE1E800458D92 /* SignInItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F371D5AE1E800458D92 /* SignInItem.swift */; };
+		B32D6F4F1D5AE1E800458D92 /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F3A1D5AE1E800458D92 /* ResponseMapper.swift */; };
+		B32D6F501D5AE1E800458D92 /* SignInResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F3B1D5AE1E800458D92 /* SignInResponseMapper.swift */; };
+		B32D6F511D5AE1E800458D92 /* SignInOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F3D1D5AE1E800458D92 /* SignInOperation.swift */; };
+		B32D6F531D5AE1E800458D92 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F401D5AE1E800458D92 /* SignInRequest.swift */; };
+		B32D6F561D5AE22400458D92 /* NetworkLayerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F551D5AE22400458D92 /* NetworkLayerConfiguration.swift */; };
+		B32D6F581D5B315000458D92 /* ProjectsRetrivalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F571D5B315000458D92 /* ProjectsRetrivalOperation.swift */; };
+		B32D6F5A1D5B32AC00458D92 /* ProjectsRetrivalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F591D5B32AC00458D92 /* ProjectsRetrivalRequest.swift */; };
+		B32D6F5C1D5B33C900458D92 /* ProjectsRetrivalResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F5B1D5B33C800458D92 /* ProjectsRetrivalResponseMapper.swift */; };
+		B32D6F5E1D5B348300458D92 /* ProjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F5D1D5B348300458D92 /* ProjectItem.swift */; };
+		B32D6F601D5B3DD000458D92 /* BackendAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F5F1D5B3DD000458D92 /* BackendAuth.swift */; };
+		B32D6F621D5B545400458D92 /* ProjectTaskformItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F611D5B545400458D92 /* ProjectTaskformItem.swift */; };
+		B32D6F641D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F631D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift */; };
+		B32D6F661D5B54EE00458D92 /* ProjectTaskformsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F651D5B54EE00458D92 /* ProjectTaskformsRequest.swift */; };
+		B32D6F681D5B558C00458D92 /* ProjectTaskformsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F671D5B558C00458D92 /* ProjectTaskformsOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +57,32 @@
 		B32D6F0A1D5ADB9D00458D92 /* BootstrapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BootstrapView.swift; path = Modules/Bootstrap/BootstrapView.swift; sourceTree = "<group>"; };
 		B32D6F111D5ADCBF00458D92 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routable.swift; path = Common/Protocols/Routable.swift; sourceTree = "<group>"; };
 		B32D6F131D5ADCDE00458D92 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Common/RootWireframe.swift; sourceTree = "<group>"; };
+		B32D6F281D5AE1E800458D92 /* BackendAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendAPIRequest.swift; sourceTree = "<group>"; };
+		B32D6F291D5AE1E800458D92 /* BackendConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendConfiguration.swift; sourceTree = "<group>"; };
+		B32D6F2A1D5AE1E800458D92 /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		B32D6F2B1D5AE1E800458D92 /* ServiceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceOperation.swift; sourceTree = "<group>"; };
+		B32D6F2D1D5AE1E800458D92 /* ArrayResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayResponseMapper.swift; sourceTree = "<group>"; };
+		B32D6F2E1D5AE1E800458D92 /* ResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
+		B32D6F301D5AE1E800458D92 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		B32D6F311D5AE1E800458D92 /* NetworkQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkQueue.swift; sourceTree = "<group>"; };
+		B32D6F321D5AE1E800458D92 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B32D6F341D5AE1E800458D92 /* NSError+Failure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Failure.swift"; sourceTree = "<group>"; };
+		B32D6F361D5AE1E800458D92 /* ParsedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedItem.swift; sourceTree = "<group>"; };
+		B32D6F371D5AE1E800458D92 /* SignInItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInItem.swift; sourceTree = "<group>"; };
+		B32D6F3A1D5AE1E800458D92 /* ResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
+		B32D6F3B1D5AE1E800458D92 /* SignInResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInResponseMapper.swift; sourceTree = "<group>"; };
+		B32D6F3D1D5AE1E800458D92 /* SignInOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInOperation.swift; sourceTree = "<group>"; };
+		B32D6F401D5AE1E800458D92 /* SignInRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		B32D6F551D5AE22400458D92 /* NetworkLayerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkLayerConfiguration.swift; path = Common/NetworkLayerConfiguration.swift; sourceTree = "<group>"; };
+		B32D6F571D5B315000458D92 /* ProjectsRetrivalOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsRetrivalOperation.swift; sourceTree = "<group>"; };
+		B32D6F591D5B32AC00458D92 /* ProjectsRetrivalRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsRetrivalRequest.swift; sourceTree = "<group>"; };
+		B32D6F5B1D5B33C800458D92 /* ProjectsRetrivalResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsRetrivalResponseMapper.swift; sourceTree = "<group>"; };
+		B32D6F5D1D5B348300458D92 /* ProjectItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectItem.swift; sourceTree = "<group>"; };
+		B32D6F5F1D5B3DD000458D92 /* BackendAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendAuth.swift; sourceTree = "<group>"; };
+		B32D6F611D5B545400458D92 /* ProjectTaskformItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformItem.swift; sourceTree = "<group>"; };
+		B32D6F631D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformsResponseMapper.swift; sourceTree = "<group>"; };
+		B32D6F651D5B54EE00458D92 /* ProjectTaskformsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformsRequest.swift; sourceTree = "<group>"; };
+		B32D6F671D5B558C00458D92 /* ProjectTaskformsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformsOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +127,7 @@
 			children = (
 				B32D6EEE1D5AD89700458D92 /* AppDelegate.swift */,
 				B32D6F041D5ADB1800458D92 /* Assets */,
-				B32D6F151D5ADE0B00458D92 /* Networking */,
+				B32D6F261D5AE1DC00458D92 /* Networking */,
 				B32D6F0F1D5ADC9C00458D92 /* Protocols */,
 				B32D6F131D5ADCDE00458D92 /* RootWireframe.swift */,
 				B32D6F031D5ADAFD00458D92 /* Storyboards */,
@@ -144,11 +195,109 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
-		B32D6F151D5ADE0B00458D92 /* Networking */ = {
+		B32D6F261D5AE1DC00458D92 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B32D6F551D5AE22400458D92 /* NetworkLayerConfiguration.swift */,
+				B32D6F271D5AE1E800458D92 /* Backend */,
+				B32D6F2C1D5AE1E800458D92 /* Core Mapping */,
+				B32D6F2F1D5AE1E800458D92 /* Core Networking */,
+				B32D6F331D5AE1E800458D92 /* Helpers */,
+				B32D6F351D5AE1E800458D92 /* Models */,
+				B32D6F391D5AE1E800458D92 /* Mappers */,
+				B32D6F3C1D5AE1E800458D92 /* Operations */,
+				B32D6F3F1D5AE1E800458D92 /* Requests */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		B32D6F271D5AE1E800458D92 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F281D5AE1E800458D92 /* BackendAPIRequest.swift */,
+				B32D6F291D5AE1E800458D92 /* BackendConfiguration.swift */,
+				B32D6F2A1D5AE1E800458D92 /* BackendService.swift */,
+				B32D6F2B1D5AE1E800458D92 /* ServiceOperation.swift */,
+				B32D6F5F1D5B3DD000458D92 /* BackendAuth.swift */,
+			);
+			name = Backend;
+			path = Common/Networking/Backend;
+			sourceTree = "<group>";
+		};
+		B32D6F2C1D5AE1E800458D92 /* Core Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F2D1D5AE1E800458D92 /* ArrayResponseMapper.swift */,
+				B32D6F2E1D5AE1E800458D92 /* ResponseMapper.swift */,
+			);
+			name = "Core Mapping";
+			path = "Common/Networking/Core Mapping";
+			sourceTree = "<group>";
+		};
+		B32D6F2F1D5AE1E800458D92 /* Core Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F301D5AE1E800458D92 /* NetworkOperation.swift */,
+				B32D6F311D5AE1E800458D92 /* NetworkQueue.swift */,
+				B32D6F321D5AE1E800458D92 /* NetworkService.swift */,
+			);
+			name = "Core Networking";
+			path = "Common/Networking/Core Networking";
+			sourceTree = "<group>";
+		};
+		B32D6F331D5AE1E800458D92 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F341D5AE1E800458D92 /* NSError+Failure.swift */,
+			);
+			name = Helpers;
+			path = Common/Networking/Helpers;
+			sourceTree = "<group>";
+		};
+		B32D6F351D5AE1E800458D92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F361D5AE1E800458D92 /* ParsedItem.swift */,
+				B32D6F371D5AE1E800458D92 /* SignInItem.swift */,
+				B32D6F5D1D5B348300458D92 /* ProjectItem.swift */,
+				B32D6F611D5B545400458D92 /* ProjectTaskformItem.swift */,
+			);
+			name = Models;
+			path = Common/Networking/Items;
+			sourceTree = "<group>";
+		};
+		B32D6F391D5AE1E800458D92 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F3A1D5AE1E800458D92 /* ResponseMapper.swift */,
+				B32D6F631D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift */,
+				B32D6F3B1D5AE1E800458D92 /* SignInResponseMapper.swift */,
+				B32D6F5B1D5B33C800458D92 /* ProjectsRetrivalResponseMapper.swift */,
+			);
+			name = Mappers;
+			path = Common/Networking/Mappers;
+			sourceTree = "<group>";
+		};
+		B32D6F3C1D5AE1E800458D92 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F3D1D5AE1E800458D92 /* SignInOperation.swift */,
+				B32D6F571D5B315000458D92 /* ProjectsRetrivalOperation.swift */,
+				B32D6F671D5B558C00458D92 /* ProjectTaskformsOperation.swift */,
+			);
+			name = Operations;
+			path = Common/Networking/Operations;
+			sourceTree = "<group>";
+		};
+		B32D6F3F1D5AE1E800458D92 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F401D5AE1E800458D92 /* SignInRequest.swift */,
+				B32D6F591D5B32AC00458D92 /* ProjectsRetrivalRequest.swift */,
+				B32D6F651D5B54EE00458D92 /* ProjectTaskformsRequest.swift */,
+			);
+			name = Requests;
+			path = Common/Networking/Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,13 +371,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32D6F581D5B315000458D92 /* ProjectsRetrivalOperation.swift in Sources */,
+				B32D6F621D5B545400458D92 /* ProjectTaskformItem.swift in Sources */,
+				B32D6F5E1D5B348300458D92 /* ProjectItem.swift in Sources */,
+				B32D6F601D5B3DD000458D92 /* BackendAuth.swift in Sources */,
 				B32D6F0B1D5ADB9D00458D92 /* BootstrapDataManager.swift in Sources */,
+				B32D6F4B1D5AE1E800458D92 /* NSError+Failure.swift in Sources */,
+				B32D6F431D5AE1E800458D92 /* BackendConfiguration.swift in Sources */,
 				B32D6F121D5ADCBF00458D92 /* Routable.swift in Sources */,
+				B32D6F461D5AE1E800458D92 /* ArrayResponseMapper.swift in Sources */,
+				B32D6F501D5AE1E800458D92 /* SignInResponseMapper.swift in Sources */,
+				B32D6F531D5AE1E800458D92 /* SignInRequest.swift in Sources */,
+				B32D6F451D5AE1E800458D92 /* ServiceOperation.swift in Sources */,
+				B32D6F491D5AE1E800458D92 /* NetworkQueue.swift in Sources */,
+				B32D6F5A1D5B32AC00458D92 /* ProjectsRetrivalRequest.swift in Sources */,
+				B32D6F511D5AE1E800458D92 /* SignInOperation.swift in Sources */,
 				B32D6F141D5ADCDE00458D92 /* RootWireframe.swift in Sources */,
+				B32D6F481D5AE1E800458D92 /* NetworkOperation.swift in Sources */,
+				B32D6F4F1D5AE1E800458D92 /* ResponseMapper.swift in Sources */,
+				B32D6F661D5B54EE00458D92 /* ProjectTaskformsRequest.swift in Sources */,
+				B32D6F441D5AE1E800458D92 /* BackendService.swift in Sources */,
+				B32D6F5C1D5B33C900458D92 /* ProjectsRetrivalResponseMapper.swift in Sources */,
 				B32D6F0D1D5ADB9D00458D92 /* BootstrapPresenter.swift in Sources */,
+				B32D6F4A1D5AE1E800458D92 /* NetworkService.swift in Sources */,
+				B32D6F641D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift in Sources */,
 				B32D6F0C1D5ADB9D00458D92 /* BootstrapInteractor.swift in Sources */,
+				B32D6F421D5AE1E800458D92 /* BackendAPIRequest.swift in Sources */,
 				B32D6EEF1D5AD89700458D92 /* AppDelegate.swift in Sources */,
 				B32D6F0E1D5ADB9D00458D92 /* BootstrapView.swift in Sources */,
+				B32D6F681D5B558C00458D92 /* ProjectTaskformsOperation.swift in Sources */,
+				B32D6F4D1D5AE1E800458D92 /* SignInItem.swift in Sources */,
+				B32D6F4C1D5AE1E800458D92 /* ParsedItem.swift in Sources */,
+				B32D6F561D5AE22400458D92 /* NetworkLayerConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
