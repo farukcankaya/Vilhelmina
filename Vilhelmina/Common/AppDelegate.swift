@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = self.window{
             router.installRootView(into: window)
         }
+        NetworkLayerConfiguration.setup()
         return true
     }
 }
