@@ -38,5 +38,7 @@ class RootWireframe{
         }
     }
     
-    
+    func showSubmissionsModule(){
+        
+    }
 }
