@@ -11,4 +11,5 @@ import Foundation
 public struct ProjectTaskformItem: ParsedItem{
     public let id: Int
     public let title: String
+    public let questions: [ProjectTaskformQuestionItem]?
 }
