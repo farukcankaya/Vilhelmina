@@ -16,7 +16,7 @@ final class ProjectTaskformsResponseMapper: ArrayResponseMapper<ProjectTaskformI
             guard let id = json["id"] as? Int else { return nil }
             guard let title = json["title"] as? String else { return nil }
             
-            return ProjectTaskformItem(id: id, title: title)
+            return ProjectTaskformItem(id: id, title: title, questions: nil)
         })
     }
 }
