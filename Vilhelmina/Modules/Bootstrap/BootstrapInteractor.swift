@@ -19,11 +19,11 @@ protocol BootstrapInteractorOutputProtocol{
     func didReceiveLoginResponse(withSuccess:Bool, error:NSError?)
     
     func didReceiveProjectsResponse(withSuccess:Bool, error:NSError?)
-    func didSwitchedTo(project project:ProjectItem)
+    func didSwitchTo(project project:ProjectItem)
     func didFoundZeroProjectsWithSubmissions()
     func didFoundZeroProjects()
     
-    func didReceiveProjectTaskformsResponse(withSuccess:Bool, items:[ProjectTaskformItem]?, error:NSError?)
+    func didReceiveProjectTaskformsResponse(withSuccess:Bool, items:[ProjectTaskformItem]?, project:ProjectItem?, error:NSError?)
 }
 
 class BootstrapInteractor: BootstrapInteractorInputProtocol{
@@ -68,7 +68,7 @@ extension BootstrapInteractor: BootstrapDataManagerOutputProtocol{
         if withSuccess{
             if let items = items where items.count > 0{
                 if let aProject = self.getAProjectWithSubmissions(items){
-                    presenter?.didSwitchedTo(project: aProject)
+                    presenter?.didSwitchTo(project: aProject)
                     dataManager?.getTaskforms(of: aProject)
                 }else{
                     presenter?.didFoundZeroProjectsWithSubmissions()
@@ -79,7 +79,7 @@ extension BootstrapInteractor: BootstrapDataManagerOutputProtocol{
         }
     }
     
-    func didReceiveProjectTaskformsResponse(withSuccess:Bool, taskforms:[ProjectTaskformItem]?, error:NSError?){
-        presenter?.didReceiveProjectTaskformsResponse(withSuccess, items: taskforms, error: error)
+    func didReceiveProjectTaskformsResponse(withSuccess:Bool, taskforms:[ProjectTaskformItem]?, project:ProjectItem?, error:NSError?){
+        presenter?.didReceiveProjectTaskformsResponse(withSuccess, items: taskforms, project: project, error: error)
     }
 }

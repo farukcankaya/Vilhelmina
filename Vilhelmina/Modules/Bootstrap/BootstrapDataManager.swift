@@ -17,14 +17,14 @@ protocol BootstrapDataManagerInputProtocol{
 protocol BootstrapDataManagerOutputProtocol{
     func didReceiveLoginResponse(withSuccess:Bool, error:NSError?)
     func didReceiveProjectsResponse(withSuccess:Bool, items:[ProjectItem]?, error:NSError?)
-    func didReceiveProjectTaskformsResponse(withSuccess:Bool, taskforms:[ProjectTaskformItem]?, error:NSError?)
+    func didReceiveProjectTaskformsResponse(withSuccess:Bool, taskforms:[ProjectTaskformItem]?, project:ProjectItem?, error:NSError?)
 }
 
 class BootstrapDataManager: BootstrapDataManagerInputProtocol{
     var interactor: BootstrapInteractor?
     
     func login(){
-        let signingInOperation = SignInOperation(email: "email", password: "password")
+        let signingInOperation = SignInOperation(email: "foo@bar", password: "123456")
         
         signingInOperation.success = { item in
             self.interactor?.didReceiveLoginResponse(true, error: nil)
@@ -58,12 +58,12 @@ class BootstrapDataManager: BootstrapDataManagerInputProtocol{
         
         projectTaskformsOperation.success = { taskforms in
             print(taskforms)
-            self.interactor?.didReceiveProjectTaskformsResponse(true, taskforms: taskforms, error: nil)
+            self.interactor?.didReceiveProjectTaskformsResponse(true, taskforms: taskforms, project: project, error: nil)
         }
         
         projectTaskformsOperation.failure = { error in
             print(error.localizedDescription)
-            self.interactor?.didReceiveProjectTaskformsResponse(false, taskforms: nil, error: error)
+            self.interactor?.didReceiveProjectTaskformsResponse(false, taskforms: nil, project: project, error: error)
         }
         
         NetworkQueue.shared.addOperation(projectTaskformsOperation)

@@ -56,7 +56,7 @@ extension BootstrapPresenter: BootstrapInteractorOutputProtocol{
         }
     }
     
-    func didSwitchedTo(project project:ProjectItem){
+    func didSwitchTo(project project:ProjectItem){
         let message = "Retrieving the taskforms of the project:".stringByAppendingFormat(" %@", project.name)
         view?.show(message: message)
     }
@@ -69,10 +69,12 @@ extension BootstrapPresenter: BootstrapInteractorOutputProtocol{
         view?.show(message: "Couldn't find any projects at all.")
     }
     
-    func didReceiveProjectTaskformsResponse(withSuccess:Bool, items:[ProjectTaskformItem]?, error:NSError?){
+    func didReceiveProjectTaskformsResponse(withSuccess:Bool, items:[ProjectTaskformItem]?, project:ProjectItem?, error:NSError?){
         if withSuccess{
             view?.show(message: "Project taskforms are received. Switching to submissions module now.")
-            self.router?.showSubmissionsModule()
+            if let items = items, project = project{
+                self.router?.showSubmissionListModule(with: project, items: items)
+            }
         }else if let error = error{
             view?.show(message: self.errorMessage(with: "project taskforms retrival", error: error))
         }
