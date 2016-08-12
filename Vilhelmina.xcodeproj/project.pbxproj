@@ -42,6 +42,22 @@
 		B32D6F641D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F631D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift */; };
 		B32D6F661D5B54EE00458D92 /* ProjectTaskformsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F651D5B54EE00458D92 /* ProjectTaskformsRequest.swift */; };
 		B32D6F681D5B558C00458D92 /* ProjectTaskformsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F671D5B558C00458D92 /* ProjectTaskformsOperation.swift */; };
+		B32D6F6B1D5B6B9900458D92 /* SubmissionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F6A1D5B6B9900458D92 /* SubmissionListView.swift */; };
+		B32D6F6D1D5B6BAE00458D92 /* SubmissionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F6C1D5B6BAE00458D92 /* SubmissionListPresenter.swift */; };
+		B32D6F6F1D5B6BDC00458D92 /* SubmissionListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F6E1D5B6BDC00458D92 /* SubmissionListInteractor.swift */; };
+		B32D6F711D5B6C0000458D92 /* SubmissionListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F701D5B6C0000458D92 /* SubmissionListDataManager.swift */; };
+		B32D6F731D5CAFF300458D92 /* ProjectTaskformsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F721D5CAFF300458D92 /* ProjectTaskformsListView.swift */; };
+		B32D6F751D5DEAB300458D92 /* ProjectTaskformQuestionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F741D5DEAB300458D92 /* ProjectTaskformQuestionsRequest.swift */; };
+		B32D6F771D5DEAC700458D92 /* ProjectTaskformSubmissionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F761D5DEAC700458D92 /* ProjectTaskformSubmissionsRequest.swift */; };
+		B32D6F7F1D5DF16200458D92 /* ProjectTaskformQuestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F7E1D5DF16200458D92 /* ProjectTaskformQuestionItem.swift */; };
+		B32D6F831D5DF9C000458D92 /* ProjectTaskformQuestionsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F821D5DF9C000458D92 /* ProjectTaskformQuestionsMapper.swift */; };
+		B32D6F851D5DFF2E00458D92 /* ProjectTaskformsWithQuestionsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F841D5DFF2E00458D92 /* ProjectTaskformsWithQuestionsResponseMapper.swift */; };
+		B32D6F871D5DFFF700458D92 /* ProjectTaskformWithQuestionsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F861D5DFFF700458D92 /* ProjectTaskformWithQuestionsOperation.swift */; };
+		B32D6F891D5E0A7E00458D92 /* ProjectTaskformSubmissionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F881D5E0A7E00458D92 /* ProjectTaskformSubmissionItem.swift */; };
+		B32D6F8B1D5E0ACC00458D92 /* ProjectTaskformAnswerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F8A1D5E0ACC00458D92 /* ProjectTaskformAnswerItem.swift */; };
+		B32D6F8D1D5E0C2E00458D92 /* ProjectTaskformAnswersMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F8C1D5E0C2E00458D92 /* ProjectTaskformAnswersMapper.swift */; };
+		B32D6F8F1D5E0E1500458D92 /* ProjectTaskformSubmissionsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F8E1D5E0E1500458D92 /* ProjectTaskformSubmissionsMapper.swift */; };
+		B32D6F911D5E0EBE00458D92 /* ProjectTaskformSubmissionsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D6F901D5E0EBE00458D92 /* ProjectTaskformSubmissionsOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +99,22 @@
 		B32D6F631D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformsResponseMapper.swift; sourceTree = "<group>"; };
 		B32D6F651D5B54EE00458D92 /* ProjectTaskformsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformsRequest.swift; sourceTree = "<group>"; };
 		B32D6F671D5B558C00458D92 /* ProjectTaskformsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformsOperation.swift; sourceTree = "<group>"; };
+		B32D6F6A1D5B6B9900458D92 /* SubmissionListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmissionListView.swift; path = Modules/SubmissionList/SubmissionListView.swift; sourceTree = "<group>"; };
+		B32D6F6C1D5B6BAE00458D92 /* SubmissionListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmissionListPresenter.swift; path = Modules/SubmissionList/SubmissionListPresenter.swift; sourceTree = "<group>"; };
+		B32D6F6E1D5B6BDC00458D92 /* SubmissionListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmissionListInteractor.swift; path = Modules/SubmissionList/SubmissionListInteractor.swift; sourceTree = "<group>"; };
+		B32D6F701D5B6C0000458D92 /* SubmissionListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmissionListDataManager.swift; path = Modules/SubmissionList/SubmissionListDataManager.swift; sourceTree = "<group>"; };
+		B32D6F721D5CAFF300458D92 /* ProjectTaskformsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectTaskformsListView.swift; path = Modules/SubmissionList/ProjectTaskformsListView.swift; sourceTree = "<group>"; };
+		B32D6F741D5DEAB300458D92 /* ProjectTaskformQuestionsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformQuestionsRequest.swift; sourceTree = "<group>"; };
+		B32D6F761D5DEAC700458D92 /* ProjectTaskformSubmissionsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformSubmissionsRequest.swift; sourceTree = "<group>"; };
+		B32D6F7E1D5DF16200458D92 /* ProjectTaskformQuestionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformQuestionItem.swift; sourceTree = "<group>"; };
+		B32D6F821D5DF9C000458D92 /* ProjectTaskformQuestionsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformQuestionsMapper.swift; sourceTree = "<group>"; };
+		B32D6F841D5DFF2E00458D92 /* ProjectTaskformsWithQuestionsResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformsWithQuestionsResponseMapper.swift; sourceTree = "<group>"; };
+		B32D6F861D5DFFF700458D92 /* ProjectTaskformWithQuestionsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformWithQuestionsOperation.swift; sourceTree = "<group>"; };
+		B32D6F881D5E0A7E00458D92 /* ProjectTaskformSubmissionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformSubmissionItem.swift; sourceTree = "<group>"; };
+		B32D6F8A1D5E0ACC00458D92 /* ProjectTaskformAnswerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformAnswerItem.swift; sourceTree = "<group>"; };
+		B32D6F8C1D5E0C2E00458D92 /* ProjectTaskformAnswersMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformAnswersMapper.swift; sourceTree = "<group>"; };
+		B32D6F8E1D5E0E1500458D92 /* ProjectTaskformSubmissionsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformSubmissionsMapper.swift; sourceTree = "<group>"; };
+		B32D6F901D5E0EBE00458D92 /* ProjectTaskformSubmissionsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTaskformSubmissionsOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +170,7 @@
 		B32D6F011D5ADAE800458D92 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B32D6F691D5B6B3600458D92 /* SubmissionList */,
 				B32D6F061D5ADB9200458D92 /* Bootstrap */,
 			);
 			name = Modules;
@@ -261,6 +294,9 @@
 				B32D6F371D5AE1E800458D92 /* SignInItem.swift */,
 				B32D6F5D1D5B348300458D92 /* ProjectItem.swift */,
 				B32D6F611D5B545400458D92 /* ProjectTaskformItem.swift */,
+				B32D6F7E1D5DF16200458D92 /* ProjectTaskformQuestionItem.swift */,
+				B32D6F881D5E0A7E00458D92 /* ProjectTaskformSubmissionItem.swift */,
+				B32D6F8A1D5E0ACC00458D92 /* ProjectTaskformAnswerItem.swift */,
 			);
 			name = Models;
 			path = Common/Networking/Items;
@@ -269,10 +305,14 @@
 		B32D6F391D5AE1E800458D92 /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
-				B32D6F3A1D5AE1E800458D92 /* ResponseMapper.swift */,
-				B32D6F631D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift */,
-				B32D6F3B1D5AE1E800458D92 /* SignInResponseMapper.swift */,
 				B32D6F5B1D5B33C800458D92 /* ProjectsRetrivalResponseMapper.swift */,
+				B32D6F8C1D5E0C2E00458D92 /* ProjectTaskformAnswersMapper.swift */,
+				B32D6F821D5DF9C000458D92 /* ProjectTaskformQuestionsMapper.swift */,
+				B32D6F631D5B54A900458D92 /* ProjectTaskformsResponseMapper.swift */,
+				B32D6F841D5DFF2E00458D92 /* ProjectTaskformsWithQuestionsResponseMapper.swift */,
+				B32D6F3A1D5AE1E800458D92 /* ResponseMapper.swift */,
+				B32D6F3B1D5AE1E800458D92 /* SignInResponseMapper.swift */,
+				B32D6F8E1D5E0E1500458D92 /* ProjectTaskformSubmissionsMapper.swift */,
 			);
 			name = Mappers;
 			path = Common/Networking/Mappers;
@@ -284,6 +324,8 @@
 				B32D6F3D1D5AE1E800458D92 /* SignInOperation.swift */,
 				B32D6F571D5B315000458D92 /* ProjectsRetrivalOperation.swift */,
 				B32D6F671D5B558C00458D92 /* ProjectTaskformsOperation.swift */,
+				B32D6F861D5DFFF700458D92 /* ProjectTaskformWithQuestionsOperation.swift */,
+				B32D6F901D5E0EBE00458D92 /* ProjectTaskformSubmissionsOperation.swift */,
 			);
 			name = Operations;
 			path = Common/Networking/Operations;
@@ -295,9 +337,23 @@
 				B32D6F401D5AE1E800458D92 /* SignInRequest.swift */,
 				B32D6F591D5B32AC00458D92 /* ProjectsRetrivalRequest.swift */,
 				B32D6F651D5B54EE00458D92 /* ProjectTaskformsRequest.swift */,
+				B32D6F741D5DEAB300458D92 /* ProjectTaskformQuestionsRequest.swift */,
+				B32D6F761D5DEAC700458D92 /* ProjectTaskformSubmissionsRequest.swift */,
 			);
 			name = Requests;
 			path = Common/Networking/Requests;
+			sourceTree = "<group>";
+		};
+		B32D6F691D5B6B3600458D92 /* SubmissionList */ = {
+			isa = PBXGroup;
+			children = (
+				B32D6F701D5B6C0000458D92 /* SubmissionListDataManager.swift */,
+				B32D6F6E1D5B6BDC00458D92 /* SubmissionListInteractor.swift */,
+				B32D6F6C1D5B6BAE00458D92 /* SubmissionListPresenter.swift */,
+				B32D6F6A1D5B6B9900458D92 /* SubmissionListView.swift */,
+				B32D6F721D5CAFF300458D92 /* ProjectTaskformsListView.swift */,
+			);
+			name = SubmissionList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,22 +429,34 @@
 			files = (
 				B32D6F581D5B315000458D92 /* ProjectsRetrivalOperation.swift in Sources */,
 				B32D6F621D5B545400458D92 /* ProjectTaskformItem.swift in Sources */,
+				B32D6F911D5E0EBE00458D92 /* ProjectTaskformSubmissionsOperation.swift in Sources */,
 				B32D6F5E1D5B348300458D92 /* ProjectItem.swift in Sources */,
 				B32D6F601D5B3DD000458D92 /* BackendAuth.swift in Sources */,
 				B32D6F0B1D5ADB9D00458D92 /* BootstrapDataManager.swift in Sources */,
 				B32D6F4B1D5AE1E800458D92 /* NSError+Failure.swift in Sources */,
+				B32D6F751D5DEAB300458D92 /* ProjectTaskformQuestionsRequest.swift in Sources */,
 				B32D6F431D5AE1E800458D92 /* BackendConfiguration.swift in Sources */,
+				B32D6F871D5DFFF700458D92 /* ProjectTaskformWithQuestionsOperation.swift in Sources */,
 				B32D6F121D5ADCBF00458D92 /* Routable.swift in Sources */,
 				B32D6F461D5AE1E800458D92 /* ArrayResponseMapper.swift in Sources */,
+				B32D6F771D5DEAC700458D92 /* ProjectTaskformSubmissionsRequest.swift in Sources */,
 				B32D6F501D5AE1E800458D92 /* SignInResponseMapper.swift in Sources */,
 				B32D6F531D5AE1E800458D92 /* SignInRequest.swift in Sources */,
+				B32D6F6F1D5B6BDC00458D92 /* SubmissionListInteractor.swift in Sources */,
+				B32D6F891D5E0A7E00458D92 /* ProjectTaskformSubmissionItem.swift in Sources */,
 				B32D6F451D5AE1E800458D92 /* ServiceOperation.swift in Sources */,
 				B32D6F491D5AE1E800458D92 /* NetworkQueue.swift in Sources */,
 				B32D6F5A1D5B32AC00458D92 /* ProjectsRetrivalRequest.swift in Sources */,
+				B32D6F7F1D5DF16200458D92 /* ProjectTaskformQuestionItem.swift in Sources */,
 				B32D6F511D5AE1E800458D92 /* SignInOperation.swift in Sources */,
 				B32D6F141D5ADCDE00458D92 /* RootWireframe.swift in Sources */,
+				B32D6F6D1D5B6BAE00458D92 /* SubmissionListPresenter.swift in Sources */,
 				B32D6F481D5AE1E800458D92 /* NetworkOperation.swift in Sources */,
+				B32D6F851D5DFF2E00458D92 /* ProjectTaskformsWithQuestionsResponseMapper.swift in Sources */,
+				B32D6F8F1D5E0E1500458D92 /* ProjectTaskformSubmissionsMapper.swift in Sources */,
+				B32D6F711D5B6C0000458D92 /* SubmissionListDataManager.swift in Sources */,
 				B32D6F4F1D5AE1E800458D92 /* ResponseMapper.swift in Sources */,
+				B32D6F731D5CAFF300458D92 /* ProjectTaskformsListView.swift in Sources */,
 				B32D6F661D5B54EE00458D92 /* ProjectTaskformsRequest.swift in Sources */,
 				B32D6F441D5AE1E800458D92 /* BackendService.swift in Sources */,
 				B32D6F5C1D5B33C900458D92 /* ProjectsRetrivalResponseMapper.swift in Sources */,
@@ -398,9 +466,13 @@
 				B32D6F0C1D5ADB9D00458D92 /* BootstrapInteractor.swift in Sources */,
 				B32D6F421D5AE1E800458D92 /* BackendAPIRequest.swift in Sources */,
 				B32D6EEF1D5AD89700458D92 /* AppDelegate.swift in Sources */,
+				B32D6F8D1D5E0C2E00458D92 /* ProjectTaskformAnswersMapper.swift in Sources */,
 				B32D6F0E1D5ADB9D00458D92 /* BootstrapView.swift in Sources */,
 				B32D6F681D5B558C00458D92 /* ProjectTaskformsOperation.swift in Sources */,
+				B32D6F831D5DF9C000458D92 /* ProjectTaskformQuestionsMapper.swift in Sources */,
+				B32D6F8B1D5E0ACC00458D92 /* ProjectTaskformAnswerItem.swift in Sources */,
 				B32D6F4D1D5AE1E800458D92 /* SignInItem.swift in Sources */,
+				B32D6F6B1D5B6B9900458D92 /* SubmissionListView.swift in Sources */,
 				B32D6F4C1D5AE1E800458D92 /* ParsedItem.swift in Sources */,
 				B32D6F561D5AE22400458D92 /* NetworkLayerConfiguration.swift in Sources */,
 			);
@@ -516,6 +588,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vilhelmina/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.saidozcan.Vilhelmina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vilhelmina/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.saidozcan.Vilhelmina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
