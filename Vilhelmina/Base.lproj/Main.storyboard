@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lütfen Bekleyiniz.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUt-pB-vSh" userLabel="CurrentActivityInfoLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUt-pB-vSh" userLabel="CurrentActivityInfoLabel">
                                 <rect key="frame" x="20" y="206" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cwP-zn-z9e">
-                                <rect key="frame" x="0.0" y="150" width="600" height="450"/>
+                                <rect key="frame" x="0.0" y="189" width="600" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M1j-ME-kfM">
                                     <size key="itemSize" width="346" height="433"/>
@@ -140,29 +140,33 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ath-tK-Uxr" userLabel="SummaryLabel">
+                                <rect key="frame" x="20" y="138" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3ar-gx-5ti" secondAttribute="trailing" constant="20" id="4ms-Nb-7Lm"/>
                             <constraint firstItem="cwP-zn-z9e" firstAttribute="leading" secondItem="GLb-L4-jXt" secondAttribute="leading" id="8zh-gg-pqb"/>
                             <constraint firstItem="3ar-gx-5ti" firstAttribute="top" secondItem="Vn2-Py-hH2" secondAttribute="bottom" constant="20" id="BL2-Fs-T1e"/>
+                            <constraint firstItem="Ath-tK-Uxr" firstAttribute="leading" secondItem="GLb-L4-jXt" secondAttribute="leading" constant="20" id="Hi1-DM-2jr"/>
                             <constraint firstAttribute="trailing" secondItem="cwP-zn-z9e" secondAttribute="trailing" id="WEw-no-zF3"/>
                             <constraint firstItem="bHb-AU-zYW" firstAttribute="top" secondItem="3ar-gx-5ti" secondAttribute="bottom" constant="20" id="cWE-Op-Tcr"/>
+                            <constraint firstItem="cwP-zn-z9e" firstAttribute="top" secondItem="Ath-tK-Uxr" secondAttribute="bottom" constant="30" id="daX-Zj-pbu"/>
                             <constraint firstItem="3ar-gx-5ti" firstAttribute="leading" secondItem="GLb-L4-jXt" secondAttribute="leading" constant="20" id="dks-C7-WAv"/>
                             <constraint firstItem="ukc-bn-TcJ" firstAttribute="top" secondItem="cwP-zn-z9e" secondAttribute="bottom" id="htW-hV-f7M"/>
                             <constraint firstItem="bHb-AU-zYW" firstAttribute="centerX" secondItem="GLb-L4-jXt" secondAttribute="centerX" id="kaM-dw-Tnk"/>
-                            <constraint firstItem="cwP-zn-z9e" firstAttribute="top" secondItem="bHb-AU-zYW" secondAttribute="bottom" constant="20" id="ptP-kb-JHn"/>
-                            <constraint firstItem="3ar-gx-5ti" firstAttribute="centerX" secondItem="GLb-L4-jXt" secondAttribute="centerX" id="wRI-Mv-NrL"/>
+                            <constraint firstItem="Ath-tK-Uxr" firstAttribute="top" secondItem="bHb-AU-zYW" secondAttribute="bottom" constant="8" id="liW-bQ-KxS"/>
+                            <constraint firstAttribute="trailing" secondItem="Ath-tK-Uxr" secondAttribute="trailing" constant="20" id="tKS-Ec-VR9"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="wRI-Mv-NrL"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="chooseProjectButton" destination="bHb-AU-zYW" id="o4X-Wh-pz4"/>
                         <outlet property="projectNameLabel" destination="3ar-gx-5ti" id="kZh-eN-VrM"/>
+                        <outlet property="summaryLabel" destination="Ath-tK-Uxr" id="9IV-OA-9eY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q67-rl-Wzt" userLabel="First Responder" sceneMemberID="firstResponder"/>

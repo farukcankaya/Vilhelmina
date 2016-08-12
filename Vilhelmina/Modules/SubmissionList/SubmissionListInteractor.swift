@@ -18,7 +18,8 @@ protocol SubmissionListInteractorInputProtocol {
 }
 
 protocol SubmissionListInteractorOutputProtocol{
-    
+    func didReceiveTaskformQuestionsResponse(withSuccess:Bool, taskform:ProjectTaskformItem?, error:NSError?)
+    func didReceiveTaskformSubmissionsResponse(withSuccess:Bool, submissions:[ProjectTaskformSubmissionItem]?, error:NSError?)
 }
 
 class SubmissionListInteractor: SubmissionListInteractorInputProtocol{
@@ -43,5 +44,11 @@ class SubmissionListInteractor: SubmissionListInteractorInputProtocol{
 }
 
 extension SubmissionListInteractor: SubmissionListDataManagerOutputProtocol{
+    func didReceiveTaskformQuestionsResponse(withSuccess:Bool, taskform:ProjectTaskformItem?, error:NSError?){
+        presenter?.didReceiveTaskformQuestionsResponse(withSuccess, taskform: taskform, error: error)
+    }
     
+    func didReceiveTaskformSubmissionsResponse(withSuccess:Bool, submissions:[ProjectTaskformSubmissionItem]?, error:NSError?){
+        presenter?.didReceiveTaskformSubmissionsResponse(withSuccess, submissions: submissions, error: error)
+    }
 }

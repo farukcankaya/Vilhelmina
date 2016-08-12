@@ -11,19 +11,23 @@ import UIKit
 
 protocol SubmissionListViewProtocol{
     var presenter: SubmissionListPresenter? { get set }
+    
+    func show(summary summary:String)
 }
 
 class SubmissionListView: UIViewController, SubmissionListViewProtocol{
     private let taskformsListSegueIdentifier = "showTaskformsListSegue"
     var presenter: SubmissionListPresenter?
     var chosenProject: ProjectItem?
-    
+
+    @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var projectNameLabel: UILabel!
     @IBOutlet weak var chooseProjectButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         projectNameLabel.text = chosenProject?.name
+        summaryLabel.text = ""
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -31,6 +35,12 @@ class SubmissionListView: UIViewController, SubmissionListViewProtocol{
             if let destinationView = segue.destinationViewController as? ProjectTaskformsListView{
                 presenter?.didBeginTaskformsListSegue(destinationView)
             }
+        }
+    }
+    
+    func show(summary summary: String) {
+        if let text = summaryLabel.text {
+            summaryLabel.text = text + " " + summary
         }
     }
 }

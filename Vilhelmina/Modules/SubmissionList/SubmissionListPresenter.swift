@@ -45,7 +45,23 @@ class SubmissionListPresenter: SubmissionListPresenterProtocol, Routable{
 }
 
 extension SubmissionListPresenter: SubmissionListInteractorOutputProtocol{
-    func didReceive(taskforms taskforms:[ProjectTaskformItem]){
-        
+    func didReceiveTaskformQuestionsResponse(withSuccess:Bool, taskform:ProjectTaskformItem?, error:NSError?){
+        if withSuccess{
+            if let count = taskform?.questions?.count{
+                view?.show(summary: "Found \(count) questions.")
+            }
+        }else{
+            view?.show(summary: "An error occured. (\(error?.localizedDescription))")
+        }
+    }
+    
+    func didReceiveTaskformSubmissionsResponse(withSuccess:Bool, submissions:[ProjectTaskformSubmissionItem]?, error:NSError?){
+        if withSuccess{
+            if let count = submissions?.count{
+                view?.show(summary: "Found \(count) submissions.")
+            }
+        }else{
+            view?.show(summary: "An error occured. (\(error?.localizedDescription))")
+        }
     }
 }
